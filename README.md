@@ -1,6 +1,6 @@
 # brave_component
 
-# 1.序列化
+# 一.序列化
 ## json_model 一行命令，将Json文件转为Dart model类。
 
 ### 安装
@@ -41,7 +41,7 @@
 - [使用json_annotation创建数据模型](https://www.jianshu.com/p/d89e5c642660)
 ### 序列化 end>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-# 2.多语言
+# 二.多语言
 
 ## flutter_localizations intl
 
