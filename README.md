@@ -35,6 +35,10 @@
     flutter packages pub run build_runner build --delete-conflicting-outputs
     3.文件监听，自动为后续创建得实体类生成对应得.g.dart文件
     flutter packages pub run build_runner watch
+
+### 参考
+    https://pub.dev/packages/json_model
+    https://www.jianshu.com/p/d89e5c642660
 ### 序列化 end>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 # 2.多语言
