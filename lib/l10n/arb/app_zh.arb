@@ -1,0 +1,10 @@
+{
+  "@@locale": "zh",
+  "appName": "BraveComponent",
+  "@appName": {
+      "description": "备注"
+  },
+  "helloWorld": "你好，世界",
+  "simplifiedChinese": "简体中文",
+  "english": "英文"
+}
