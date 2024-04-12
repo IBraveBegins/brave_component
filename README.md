@@ -63,14 +63,14 @@
 5. 调用:
    1. 直接使用 Text(AppLocalizations.of(context).helloWorld)
    2. 扩展使用   
-   //扩展BuildContext  
-   ```
-   extension BuildContextExtension on BuildContext {    
-      AppLocalizations get l10n => AppLocalizations.of(this);    
-   }
-   ```
-   //使用  
-   Text(context.l10n.helloWorld)  
+//扩展BuildContext  
+```
+extension BuildContextExtension on BuildContext {    
+   AppLocalizations get l10n => AppLocalizations.of(this);    
+}
+```
+//使用  
+Text(context.l10n.helloWorld)  
 
 ### 参考
 - [多语言配置](https://www.jianshu.com/p/6b9c81401469)
