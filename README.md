@@ -1,4 +1,4 @@
-# brave_component
+# 三方组件库用法及example
 
 # 一.序列化
 ## json_model 一行命令，将Json文件转为Dart model类。
