@@ -61,11 +61,11 @@
 3. 添加完成之后，执行命令`flutter gen-l10n`，执行命令`flutter run`，.dart_tools会自动生成相关的文件
 4. MaterialApp或GetMaterialApp配置国际化字段
 5. 调用:
-   - 直接使用 Text(AppLocalizations.of(context).helloWorld)
-   - 扩展使用   
+   1. 直接使用 Text(AppLocalizations.of(context).helloWorld)
+   2. 扩展使用   
    //扩展BuildContext  
-  `extension BuildContextExtension on BuildContext {  
-       AppLocalizations get l10n => AppLocalizations.of(this);  
+  `extension BuildContextExtension on BuildContext {    
+       AppLocalizations get l10n => AppLocalizations.of(this);    
    }`   
    //使用  
    Text(context.l10n.helloWorld)  
