@@ -1,5 +1,5 @@
 {
   "@JsonKey(name: '+1') int?": "loved",
-  "name":"wendux",
+  "name":"brave",
   "age?":20
 }
