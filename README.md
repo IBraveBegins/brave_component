@@ -4,15 +4,14 @@
 ## json_model 一行命令，将Json文件转为Dart model类。
 
 ### 安装
-
-    dependencies:
-    #json序列化
-    json_annotation: ^4.8.1
+```
+dependencies:
+json_annotation: ^4.8.1
     
-    dev_dependencies:
-    json_model: ^1.0.0
-    json_serializable: ^6.7.1
-
+dev_dependencies:
+json_model: ^1.0.0
+json_serializable: ^6.7.1
+```
 ### 使用
 
 1. 在工程根目录下创建一个名为 `jsons` 的目录;
@@ -46,14 +45,16 @@
 ## flutter_localizations intl
 
 ### 安装 flutter_localizations和intl，并启动generate标志
-    dependencies:
-    flutter_localizations:
-    sdk: flutter
-    intl: any
+```
+dependencies:
+flutter_localizations:
+sdk: flutter
+intl: any
 
-    flutter:
-    uses-material-design: true
-    generate: true
+flutter:
+uses-material-design: true
+generate: true
+```
 ### 使用
 
 1. lib文件夹中新建文件夹l10n/arb，并在其中创建app_en.arb 和app_zh.arb文件
@@ -78,3 +79,25 @@
 - [语言国际化状态管理](https://blog.csdn.net/qq_38774121/article/details/115540857)
 ### 多语言end>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
+# 三、GetX状态管理及路由管理用法
+
+### 安装
+```
+dependencies:
+get: ^4.6.6
+```
+
+### 使用
+1. 安装GetX插件，快捷生成模版代码
+2. 主入口MaterialApp改成GetMaterialApp
+3. 定义路由常量RoutePath类、别名映射页面RoutePages类
+4. 初始initialRoute，getPages。
+5. Binding统一管理GetxController，具体用法参考呆呆666的文章Flutter GetX使用---简洁的魅力，也是GetX插件开发者
+
+### 参考
+- [Flutter GetX使用---简洁的魅力！](https://juejin.cn/post/6924104248275763208#heading-25)
+### GetX end>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+# 四、FlutterAssetRefGenerator 图片资源自动生成引用路径的插件
+- [AssetRefGenerator](https://github.com/AndrewShen812/AssetsRefGenerator/blob/master/README_zh.md)
+### AssetRefGenerator end>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
