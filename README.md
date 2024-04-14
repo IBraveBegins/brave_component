@@ -100,4 +100,4 @@ get: ^4.6.6
 
 # 四、FlutterAssetRefGenerator 图片资源自动生成引用路径的插件
 - [AssetRefGenerator](https://github.com/AndrewShen812/AssetsRefGenerator/blob/master/README_zh.md)
-### AssetRefGenerator end>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+### AssetRefGenerator end>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
