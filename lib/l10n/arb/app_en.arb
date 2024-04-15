@@ -6,6 +6,7 @@
   },
   "helloWorld": "helloWorld",
   "simplifiedChinese": "simplifiedChinese",
+  "traditionalChinese": "traditionalChinese",
   "english": "english",
   "multiLanguage": "multiLanguage"
 }

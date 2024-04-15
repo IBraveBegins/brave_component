@@ -35,6 +35,13 @@ class MultiLanguagePage extends StatelessWidget {
               const SizedBox(height: 12),
               ElevatedButton(
                   onPressed: () {
+                    logic.changeLocale(const Locale('zh', 'HK'));
+                  },
+                  child: Texts.fontNormal14(context.l10n.traditionalChinese,
+                      color: Colours.titleColor)),
+              const SizedBox(height: 12),
+              ElevatedButton(
+                  onPressed: () {
                     logic.changeLocale(const Locale('en'));
                   },
                   child: Texts.fontNormal14(context.l10n.english,
