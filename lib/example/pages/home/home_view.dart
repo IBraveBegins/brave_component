@@ -2,7 +2,7 @@ import 'package:brave_component/l10n/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../../../res/colours.dart';
+import '../../../core/res/colours.dart';
 import '../../../widgets/base/texts.dart';
 import 'home_logic.dart';
 

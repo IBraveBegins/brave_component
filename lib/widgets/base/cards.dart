@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../res/dimens.dart';
+import '../../core/res/dimens.dart';
 
 abstract class Cards {
   static Widget normal({
