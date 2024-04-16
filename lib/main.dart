@@ -5,12 +5,18 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:get/get.dart';
 
-void main() {
-  runApp(const MyApp());
+import 'core/cache/cache/cache.dart';
+import 'core/cache/helpers/cache_helper.dart';
+import 'core/enums/language.dart';
+
+void main() async {
+  await Cache.instance.init();
+  runApp(MyApp());
 }
 
 class MyApp extends StatefulWidget {
-  const MyApp({super.key});
+  bool _init = true;
+  MyApp({super.key});
 
   @override
   State<MyApp> createState() => MyAppState();
@@ -18,16 +24,20 @@ class MyApp extends StatefulWidget {
 
 class MyAppState extends State<MyApp> {
   // 供外部使用的_AppSetting实例，用于修改app的状态
-  static _AppSetting setting = _AppSetting.instance;
+  static AppSetting setting = AppSetting.instance;
 
   @override
   void initState() {
     super.initState();
+
+    //第一次进入app时，获取本地多语言的countryCode
+    if (widget._init) {
+      setting.setLocale();
+      widget._init = false;
+    }
     // 更改语言
-    setting.changeLocale = (Locale locale) {
-      setState(() {
-        setting.setLocale(locale);
-      });
+    setting.changeLocale = () {
+      setState(() {});
     };
   }
 
@@ -57,31 +67,21 @@ class MyAppState extends State<MyApp> {
   }
 }
 
-class _AppSetting {
-  _AppSetting._(); // 私有命名构造函数
+class AppSetting {
+  AppSetting._();
 
-  // 静态属性，用于存储_AppSetting的实例
-  static final _AppSetting _instance = _AppSetting._();
+  static final AppSetting _instance = AppSetting._();
 
-  // 静态方法，用于获取_AppSetting的实例
-  static _AppSetting get instance => _instance;
+  static AppSetting get instance => _instance;
+  Locale? _locale;
 
-  Function(Locale locale)? changeLocale; // 使用?表示这个字段可以为null
-  Locale? _locale; // 使用?表示这个字段可以为null
-  final List<Locale> _supportedLocales = [
-    const Locale('zh', 'CN'),
-    const Locale('en', 'US')
-  ];
+  Function()? changeLocale;
 
-  // 公开的方法来更改locale
-  void setLocale(Locale locale) {
-    if (_supportedLocales
-        .map((locale) {
-          return locale.languageCode;
-        })
-        .toSet()
-        .contains(locale?.languageCode)) {
-      _locale = locale;
-    }
+  void setLocale() {
+    String code = CacheHelper.countryCode;
+    List<String> lang = code.split('-');
+    _locale = (code == Language.fsLan.countryCode)
+        ? Get.deviceLocale
+        : Locale(lang[0], lang[1]);
   }
 }

@@ -4,9 +4,12 @@
   "@appName": {
       "description": "备注"
   },
-  "helloWorld": "helloWorld",
-  "simplifiedChinese": "simplifiedChinese",
-  "traditionalChinese": "traditionalChinese",
-  "english": "english",
-  "multiLanguage": "multiLanguage"
+  "helloWorld": "HelloWorld",
+  "followerSystemLanguage": "FollowerSystemLanguage",
+  "simplifiedChinese": "SimplifiedChinese",
+  "traditionalChinese": "TraditionalChinese",
+  "english": "English",
+  "setting": "Setting",
+  "multiLanguage": "MultiLanguage",
+  "theme": "Theme"
 }

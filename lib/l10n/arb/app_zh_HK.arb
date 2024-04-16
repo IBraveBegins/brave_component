@@ -5,8 +5,11 @@
        "description": "備注"
    },
    "helloWorld": "妳好，世界",
+   "followerSystemLanguage": "跟隨系統語言",
    "simplifiedChinese": "簡體中文",
    "traditionalChinese": "繁體中文",
    "english": "英文",
-   "multiLanguage": "多語言"
+   "setting": "設置",
+   "multiLanguage": "多語言",
+   "theme": "主題"
 }

@@ -27,7 +27,7 @@ class HomePage extends StatelessWidget {
             const SizedBox(height: 12),
             ElevatedButton(
                 onPressed: () {
-                  logic.toJumpMultiLanguage();
+                  logic.toJumpSetting();
                 },
                 child: Texts.fontSize14Normal(context.l10n.multiLanguage,
                     color: Colours.titleColor))
