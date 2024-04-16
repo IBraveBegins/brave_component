@@ -6,7 +6,7 @@ import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 
 /// 存储管理：用于保存key-value键值对数据
 /// global：存放的键值对,立即加载箱中的所有数据到内存中，存取方便，但是会占用内存
-/// local：存放的键值对,不会立即加载所有数据到内存中。相反，它只会在你请求特定的键时加载相应的数据，需要异步查找
+/// local：存放的键值对,不会立即加载所有数据到内存中。相反，它只会在你请求特定的键时加载相应的数据。需要异步查找
 /// encrypt：存放加密的键值对数据，对于敏感重要的信息需要存在这里面
 class Cache {
   static const _globalName = 'global';

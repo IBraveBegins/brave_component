@@ -46,6 +46,7 @@ class L10nAppState extends State<L10nApp> {
         useMaterial3: true,
       ),
       locale: setting._locale,
+      fallbackLocale: const Locale("zh", "CN"),
       localeResolutionCallback: (deviceLocale, supportedLocales) {
         print('当前语言：${deviceLocale.toString()}');
         return;

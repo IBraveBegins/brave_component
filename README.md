@@ -50,6 +50,7 @@ dependencies:
 flutter_localizations:
 sdk: flutter
 intl: any
+get: ^4.6.6
 
 flutter:
 uses-material-design: true
@@ -81,9 +82,26 @@ generate: true
 - [国际化多语言支持方案](https://blog.csdn.net/duanwei1988/article/details/135536458)
 - [语言国际化状态管理](https://blog.csdn.net/qq_38774121/article/details/115540857)
 
+## 二、GetX 版的多语言
 
-
-
+### 安装 GetX
+```
+dependencies:
+get: ^4.6.6
+```
+### 使用
+1. 语言配置 在lib/core下创建一个language文件夹，文件夹下创建一个local.dart文件
+2. language文件夹下创建一个messages.dart文件
+3. 主入口MaterialApp改成GetMaterialApp
+4. 配置
+```
+translations: Messages(),//所有的多语言翻译资源
+locale: Get.deviceLocale,//跟随系统设置语言
+fallbackLocale: Locale("zh", "CN"),//未提供当前Locale翻译时，备用的翻译
+```
+### 持久化 参考代码
+### 参考
+- [Flutter 多语言、主题切换之GetX库](https://blog.csdn.net/qq_38436214/article/details/136345295)
 ### 多语言end>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 # 三、GetX状态管理及路由管理用法
