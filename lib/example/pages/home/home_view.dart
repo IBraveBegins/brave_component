@@ -22,14 +22,14 @@ class HomePage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Texts.fontNormal14(context.l10n.helloWorld,
+            Texts.fontSize14Normal(context.l10n.helloWorld,
                 color: Colours.titleColor),
             const SizedBox(height: 12),
             ElevatedButton(
                 onPressed: () {
                   logic.toJumpMultiLanguage();
                 },
-                child: Texts.fontNormal14(context.l10n.multiLanguage,
+                child: Texts.fontSize14Normal(context.l10n.multiLanguage,
                     color: Colours.titleColor))
           ],
         ),

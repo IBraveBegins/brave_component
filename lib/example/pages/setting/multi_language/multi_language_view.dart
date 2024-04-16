@@ -15,7 +15,7 @@ class MultiLanguagePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Texts.fontSemiBold18(context.l10n.multiLanguage,
+        title: Texts.fontSize18Normal(context.l10n.multiLanguage,
             color: Colours.titleColor),
       ),
       body: Container(
@@ -23,28 +23,28 @@ class MultiLanguagePage extends StatelessWidget {
         child: Center(
           child: Column(
             children: [
-              Texts.fontNormal14(context.l10n.multiLanguage,
+              Texts.fontSize14Normal(context.l10n.multiLanguage,
                   color: Colours.titleColor),
               const SizedBox(height: 12),
               ElevatedButton(
                   onPressed: () {
                     logic.changeLocale(const Locale('zh'));
                   },
-                  child: Texts.fontNormal14(context.l10n.simplifiedChinese,
+                  child: Texts.fontSize14Normal(context.l10n.simplifiedChinese,
                       color: Colours.titleColor)),
               const SizedBox(height: 12),
               ElevatedButton(
                   onPressed: () {
                     logic.changeLocale(const Locale('zh', 'HK'));
                   },
-                  child: Texts.fontNormal14(context.l10n.traditionalChinese,
+                  child: Texts.fontSize14Normal(context.l10n.traditionalChinese,
                       color: Colours.titleColor)),
               const SizedBox(height: 12),
               ElevatedButton(
                   onPressed: () {
                     logic.changeLocale(const Locale('en'));
                   },
-                  child: Texts.fontNormal14(context.l10n.english,
+                  child: Texts.fontSize14Normal(context.l10n.english,
                       color: Colours.titleColor))
             ],
           ),

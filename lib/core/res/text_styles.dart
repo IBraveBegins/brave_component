@@ -2,85 +2,85 @@ import 'package:flutter/material.dart';
 
 abstract class TextStyles {
   /// 18号字体
-  static const fontNormal18 = TextStyle(
+  static const fontSize18Normal = TextStyle(
     fontSize: 18,
     fontWeight: FontWeight.w400,
   );
 
-  static const fontMedium18 = TextStyle(
+  static const fontSize18Medium = TextStyle(
     fontSize: 18,
     fontWeight: FontWeight.w500,
   );
 
-  static const fontSemiBold18 = TextStyle(
+  static const fontSize18SemiBold = TextStyle(
     fontSize: 18,
     fontWeight: FontWeight.w600,
   );
 
-  static const fontBold18 = TextStyle(
+  static const fontSize18Bold = TextStyle(
     fontSize: 18,
     fontWeight: FontWeight.w700,
   );
 
   /// 16号字体
-  static const fontNormal16 = TextStyle(
+  static const fontSize16Normal = TextStyle(
     fontSize: 16,
     fontWeight: FontWeight.w400,
   );
 
-  static const fontMedium16 = TextStyle(
+  static const fontSize16Medium = TextStyle(
     fontSize: 16,
     fontWeight: FontWeight.w500,
   );
 
-  static const fontSemiBold16 = TextStyle(
+  static const fontSize16SemiBold = TextStyle(
     fontSize: 16,
     fontWeight: FontWeight.w600,
   );
 
-  static const fontBold16 = TextStyle(
+  static const fontSize16Bold = TextStyle(
     fontSize: 16,
     fontWeight: FontWeight.w700,
   );
 
   /// 14号字体
-  static const fontNormal14 = TextStyle(
+  static const fontSize14Normal = TextStyle(
     fontSize: 14,
     fontWeight: FontWeight.w400,
   );
 
-  static const fontMedium14 = TextStyle(
+  static const fontSize14Medium = TextStyle(
     fontSize: 14,
     fontWeight: FontWeight.w500,
   );
 
-  static const fontSemiBold14 = TextStyle(
+  static const fontSize14SemiBold = TextStyle(
     fontSize: 14,
     fontWeight: FontWeight.w600,
   );
 
-  static const fontBold14 = TextStyle(
+  static const fontSize14Bold = TextStyle(
     fontSize: 14,
     fontWeight: FontWeight.w700,
   );
 
   /// 12号字体
-  static const fontNormal12 = TextStyle(
+  static const fontSize12Normal = TextStyle(
     fontSize: 12,
     fontWeight: FontWeight.w400,
   );
 
-  static const fontMedium12 = TextStyle(
+  static const fontSize12Medium = TextStyle(
     fontSize: 12,
     fontWeight: FontWeight.w500,
   );
 
-  static const fontSemiBold12 = TextStyle(
+  static const fontSize12SemiBold = TextStyle(
     fontSize: 12,
     fontWeight: FontWeight.w600,
   );
 
-  static const fontBold12 = TextStyle(
+  static const fontSize12Bold = TextStyle(
     fontSize: 12,
     fontWeight: FontWeight.w700,
   );

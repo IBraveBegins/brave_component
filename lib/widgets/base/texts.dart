@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 abstract class Texts {
   /// 18号字体
-  static Text fontNormal18(
+  static Text fontSize18Normal(
     String text, {
     Color? color,
     TextAlign? textAlign,
@@ -26,7 +26,7 @@ abstract class Texts {
         decorationColor: decorationColor,
       );
 
-  static Text fontMedium18(
+  static Text fontSize18Medium(
     String text, {
     Color? color,
     TextAlign? textAlign,
@@ -49,7 +49,7 @@ abstract class Texts {
         decorationColor: decorationColor,
       );
 
-  static Text fontSemiBold18(
+  static Text fontSize18SemiBold(
     String text, {
     Color? color,
     TextAlign? textAlign,
@@ -72,7 +72,7 @@ abstract class Texts {
         decorationColor: decorationColor,
       );
 
-  static Text fontBold18(
+  static Text fontSize18Bold(
     String text, {
     Color? color,
     TextAlign? textAlign,
@@ -96,7 +96,7 @@ abstract class Texts {
       );
 
   /// 16号字体
-  static Text fontNormal16(
+  static Text fontSize16Normal(
     String text, {
     Color? color,
     TextAlign? textAlign,
@@ -120,7 +120,7 @@ abstract class Texts {
         decorationColor: decorationColor,
       );
 
-  static Text fontMedium16(
+  static Text fontSize16Medium(
     String text, {
     Color? color,
     TextAlign? textAlign,
@@ -143,7 +143,7 @@ abstract class Texts {
         decorationColor: decorationColor,
       );
 
-  static Text fontSemiBold16(
+  static Text fontSize16SemiBold(
     String text, {
     Color? color,
     TextAlign? textAlign,
@@ -166,7 +166,7 @@ abstract class Texts {
         decorationColor: decorationColor,
       );
 
-  static Text fontBold16(
+  static Text fontSize16Bold(
     String text, {
     Color? color,
     TextAlign? textAlign,
@@ -190,7 +190,7 @@ abstract class Texts {
       );
 
   /// 14号字体
-  static Text fontNormal14(
+  static Text fontSize14Normal(
     String text, {
     Color? color,
     TextAlign? textAlign,
@@ -214,7 +214,7 @@ abstract class Texts {
         decorationColor: decorationColor,
       );
 
-  static Text fontMedium14(
+  static Text fontSize14Medium(
     String text, {
     Color? color,
     TextAlign? textAlign,
@@ -237,7 +237,7 @@ abstract class Texts {
         decorationColor: decorationColor,
       );
 
-  static Text fontSemiBold14(
+  static Text fontSize14SemiBold(
     String text, {
     Color? color,
     TextAlign? textAlign,
@@ -260,7 +260,7 @@ abstract class Texts {
         decorationColor: decorationColor,
       );
 
-  static Text fontBold14(
+  static Text fontSize14Bold(
     String text, {
     Color? color,
     TextAlign? textAlign,
@@ -284,7 +284,7 @@ abstract class Texts {
       );
 
   /// 12号字体
-  static Text fontNormal12(
+  static Text fontSize12Normal(
     String text, {
     Color? color,
     TextAlign? textAlign,
@@ -308,7 +308,7 @@ abstract class Texts {
         decorationColor: decorationColor,
       );
 
-  static Text fontMedium12(
+  static Text fontSize12Medium(
     String text, {
     Color? color,
     TextAlign? textAlign,
@@ -331,7 +331,7 @@ abstract class Texts {
         decorationColor: decorationColor,
       );
 
-  static Text fontSemiBold12(
+  static Text fontSize12SemiBold(
     String text, {
     Color? color,
     TextAlign? textAlign,
@@ -354,7 +354,7 @@ abstract class Texts {
         decorationColor: decorationColor,
       );
 
-  static Text fontBold12(
+  static Text fontSize12Bold(
     String text, {
     Color? color,
     TextAlign? textAlign,
