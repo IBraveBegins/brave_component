@@ -2,14 +2,14 @@ import 'package:brave_component/l10n/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../../../../core/res/colours.dart';
-import '../../../../widgets/base/texts.dart';
-import 'theme_logic.dart';
+import '../../../../../core/res/colours.dart';
+import '../../../../../widgets/base/texts.dart';
+import 'l10n_theme_logic.dart';
 
-class ThemePage extends StatelessWidget {
-  ThemePage({super.key});
+class L10nThemePage extends StatelessWidget {
+  L10nThemePage({super.key});
 
-  final logic = Get.find<ThemeLogic>();
+  final logic = Get.find<L10nThemeLogic>();
 
   @override
   Widget build(BuildContext context) {

@@ -2,7 +2,7 @@ import 'package:brave_component/core/cache/helpers/cache_helper.dart';
 import 'package:brave_component/routes/route_path.dart';
 import 'package:get/get.dart';
 
-class SettingLogic extends GetxController {
+class L10nSettingLogic extends GetxController {
   late String countryCode;
   @override
   void onInit() {
@@ -12,22 +12,22 @@ class SettingLogic extends GetxController {
 
   void toName(String page) {
     switch (page) {
-      case RoutePath.multiLanguage:
-        Get.toNamed(RoutePath.multiLanguage)
+      case RoutePath.l10n_multiLanguage:
+        Get.toNamed(RoutePath.l10n_multiLanguage)
             ?.then((value) => {getCountryCode()});
         break;
-      case RoutePath.theme:
-        Get.toNamed(RoutePath.theme);
+      case RoutePath.l10n_theme:
+        Get.toNamed(RoutePath.l10n_theme);
         break;
       default:
-        Get.toNamed(RoutePath.multiLanguage);
+        Get.toNamed(RoutePath.l10n_multiLanguage);
         break;
     }
   }
 
   void getCountryCode() {
     countryCode = CacheHelper.countryCode;
-    print('setting getCountryCode：$countryCode');
+    print('l10n_setting getCountryCode：$countryCode');
     update();
   }
 }

@@ -2,14 +2,14 @@ import 'package:brave_component/l10n/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../../../core/res/colours.dart';
-import '../../../widgets/base/texts.dart';
-import 'home_logic.dart';
+import '../../../../core/res/colours.dart';
+import '../../../../widgets/base/texts.dart';
+import 'l10n_home_logic.dart';
 
-class HomePage extends StatelessWidget {
-  HomePage({super.key});
+class L10nHomePage extends StatelessWidget {
+  L10nHomePage({super.key});
 
-  final logic = Get.put(HomeLogic());
+  final logic = Get.put(L10nHomeLogic());
 
   @override
   Widget build(BuildContext context) {

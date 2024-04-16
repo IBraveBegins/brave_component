@@ -1,4 +1,3 @@
-import 'package:brave_component/core/enums/language.dart';
 import 'package:brave_component/l10n/l10n.dart';
 import 'package:flutter/widgets.dart';
 

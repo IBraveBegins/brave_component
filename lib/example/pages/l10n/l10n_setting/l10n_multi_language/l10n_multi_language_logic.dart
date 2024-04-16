@@ -4,9 +4,9 @@ import 'package:brave_component/core/cache/helpers/cache_helper.dart';
 import 'package:brave_component/core/enums/language.dart';
 import 'package:get/get.dart';
 
-import '../../../../main.dart';
+import '../../../../../l10nApp.dart';
 
-class MultiLanguageLogic extends GetxController {
+class L10nMultiLanguageLogic extends GetxController {
   late String countryCode;
 
   @override
@@ -19,7 +19,7 @@ class MultiLanguageLogic extends GetxController {
     countryCode = code;
     updateLocale();
     CacheHelper.saveCountryCode(code);
-    MyAppState.setting.changeLocale!();
+    L10nAppState.setting.changeLocale!();
     update();
   }
 

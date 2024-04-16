@@ -42,7 +42,7 @@ json_serializable: ^6.7.1
 
 # 二.多语言
 
-## flutter_localizations intl
+## 一、flutter_localizations 与 GetX 配合版的多语言
 
 ### 安装 flutter_localizations和intl，并启动generate标志
 ```
@@ -72,11 +72,18 @@ generate: true
    ```
      - 使用   
      Text(context.l10n.helloWorld)  
-
+   
+6. 例子 main入口 
+     - 打开这一行   runApp(L10nApp()); //flutter_localizations与GetX配合版的多语言 切换语言时需要自己控制状态
+     - 注释掉这一行 runApp(App()); //GetX多语言
 ### 参考
 - [多语言配置](https://www.jianshu.com/p/6b9c81401469)
 - [国际化多语言支持方案](https://blog.csdn.net/duanwei1988/article/details/135536458)
 - [语言国际化状态管理](https://blog.csdn.net/qq_38774121/article/details/115540857)
+
+
+
+
 ### 多语言end>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 # 三、GetX状态管理及路由管理用法

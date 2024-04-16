@@ -3,14 +3,14 @@ import 'package:brave_component/l10n/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../../../../core/res/colours.dart';
-import '../../../../widgets/base/texts.dart';
-import 'multi_language_logic.dart';
+import '../../../../../core/res/colours.dart';
+import '../../../../../widgets/base/texts.dart';
+import 'l10n_multi_language_logic.dart';
 
-class MultiLanguagePage extends StatelessWidget {
-  MultiLanguagePage({super.key});
+class L10nMultiLanguagePage extends StatelessWidget {
+  L10nMultiLanguagePage({super.key});
 
-  final logic = Get.find<MultiLanguageLogic>();
+  final logic = Get.find<L10nMultiLanguageLogic>();
 
   @override
   Widget build(BuildContext context) {
@@ -59,7 +59,7 @@ class MultiLanguagePage extends StatelessWidget {
   }
 
   Widget _itemContent(BuildContext context, int index) {
-    return GetBuilder<MultiLanguageLogic>(builder: (logic) {
+    return GetBuilder<L10nMultiLanguageLogic>(builder: (logic) {
       return Container(
         padding: const EdgeInsets.symmetric(horizontal: 15),
         height: 44,
