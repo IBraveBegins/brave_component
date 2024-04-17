@@ -133,7 +133,7 @@ get: ^4.6.6
 1. 安装FlutterAssetRefGenerator插件
 2. 根目录下新建assets/images文件
 3. 根目录新建.packages File
-4. 点击 IDE 工具栏的 ![Image text](./assets/images/ag.png)按钮。 
+4. 点击 IDE 工具栏的 ![小文件夹图标](./assets/images/ag.png)按钮。 
 5. 打开 pubspec.yaml 文件中已经自动添加了资源文件的声明。且在lib下生成了一个res.dart文件，文件里就是图片的索引。
 ## 使用
 - ImageIcon(
