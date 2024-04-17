@@ -1,5 +1,10 @@
 import 'package:brave_component/l10n/l10n.dart';
 import 'package:flutter/widgets.dart';
+import 'package:get/get.dart';
+
+import '../../l10n_app.dart';
+import '../cache/helpers/cache_helper.dart';
+import '../enums/language.dart';
 
 class LanguageUtils {
   static String getLanguage(BuildContext context, String code) {
@@ -22,5 +27,26 @@ class LanguageUtils {
         break;
     }
     return language;
+  }
+
+  static Locale? getLocale() {
+    Locale? locale;
+    String code = CacheHelper.countryCode;
+    List<String> lang = code.split('-');
+    locale = (code == Language.fsLan.countryCode)
+        ? Get.deviceLocale
+        : Locale(lang[0], lang[1]);
+    return locale;
+  }
+
+  static void updateLocale(String countryCode, {bool isL10n = false}) {
+    List<String> lang = countryCode.split('-');
+    Get.updateLocale((countryCode == Language.fsLan.countryCode)
+        ? Get.deviceLocale!
+        : Locale(lang[0], lang[1]));
+    CacheHelper.saveCountryCode(countryCode);
+    if (isL10n) {
+      L10nAppState.setting.changeLocale!();
+    }
   }
 }

@@ -94,13 +94,16 @@ get: ^4.6.6
 2. language文件夹下创建一个messages.dart文件
 3. 主入口MaterialApp改成GetMaterialApp
 4. 配置
-```
-translations: Messages(),//所有的多语言翻译资源
-locale: Get.deviceLocale,//跟随系统设置语言
-fallbackLocale: Locale("zh", "CN"),//未提供当前Locale翻译时，备用的翻译
-```
-   - 使用   
-   Text(Local.helloWorld.tr)  
+   ```
+   translations: Messages(),//所有的多语言翻译资源
+   locale: Get.deviceLocale,//跟随系统设置语言 持久化以后这里改一下
+   fallbackLocale: Locale("zh", "CN"),//未提供当前Locale翻译时，备用的翻译
+   ```
+      - 使用   
+      Text(Local.helloWorld.tr)  
+5. 例子 main入口
+   - 注释掉这一行   runApp(L10nApp()); //flutter_localizations与GetX配合版的多语言 切换语言时需要自己控制状态
+   - 打开这一行 runApp(App()); //GetX多语言
 ### 持久化 参考代码
 ### 参考
 - [Flutter 多语言、主题切换之GetX库](https://blog.csdn.net/qq_38436214/article/details/136345295)

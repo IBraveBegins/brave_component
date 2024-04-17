@@ -1,9 +1,8 @@
+import 'package:brave_component/core/utils/language_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:get/get.dart';
 
-import 'core/cache/helpers/cache_helper.dart';
-import 'core/enums/language.dart';
 import 'l10n/l10n.dart';
 import 'routes/route_pages.dart';
 import 'routes/route_path.dart';
@@ -73,10 +72,6 @@ class AppSetting {
   Function()? changeLocale;
 
   void setLocale() {
-    String code = CacheHelper.countryCode;
-    List<String> lang = code.split('-');
-    _locale = (code == Language.fsLan.countryCode)
-        ? Get.deviceLocale
-        : Locale(lang[0], lang[1]);
+    _locale = LanguageUtils.getLocale();
   }
 }

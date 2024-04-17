@@ -1,8 +1,9 @@
 import 'package:brave_component/core/cache/helpers/cache_helper.dart';
-import 'package:brave_component/core/utils/language_utils.dart';
 import 'package:get/get.dart';
 
-class L10nMultiLanguageLogic extends GetxController {
+import '../../../../../core/utils/language_utils.dart';
+
+class MultiLanguageLogic extends GetxController {
   late String countryCode;
 
   @override
@@ -13,7 +14,7 @@ class L10nMultiLanguageLogic extends GetxController {
 
   void changeLanguage(String code) {
     countryCode = code;
-    LanguageUtils.updateLocale(code, isL10n: true);
+    LanguageUtils.updateLocale(code);
     update();
   }
 }
