@@ -99,6 +99,8 @@ translations: Messages(),//所有的多语言翻译资源
 locale: Get.deviceLocale,//跟随系统设置语言
 fallbackLocale: Locale("zh", "CN"),//未提供当前Locale翻译时，备用的翻译
 ```
+   - 使用   
+   Text(Local.helloWorld.tr)  
 ### 持久化 参考代码
 ### 参考
 - [Flutter 多语言、主题切换之GetX库](https://blog.csdn.net/qq_38436214/article/details/136345295)
