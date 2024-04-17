@@ -3,6 +3,8 @@ import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:brave_component/res.dart';
 
+import '../../generated/r.dart';
+
 typedef NavBackCallback = void Function(BuildContext context);
 
 abstract class AppBars {
@@ -38,7 +40,7 @@ abstract class AppBars {
                     builder: (context) {
                       return IconButton(
                         icon: ImageIcon(
-                          AssetImage(backIcon ?? Res.nav_back),
+                          AssetImage(backIcon ?? R.imagesNavBack),
                           size: 20,
                         ),
                         onPressed: () => navBackCallback != null

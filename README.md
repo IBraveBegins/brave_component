@@ -128,6 +128,32 @@ get: ^4.6.6
 - [Flutter GetX使用---简洁的魅力！](https://juejin.cn/post/6924104248275763208#heading-25)
 ### GetX end>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-# 四、FlutterAssetRefGenerator 图片资源自动生成引用路径的插件
+# 四、图片资源自动生成索引插件
+## 一、FlutterAssetRefGenerator 插件（windows上 点击生成图片索引按钮后，pubspec.yaml 会出现中文乱码，需要手动改乱码；mac上没问题。 ）
+1. 安装FlutterAssetRefGenerator插件
+2. 根目录下新建assets/images文件
+3. 根目录新建.packages File
+4. 点击 IDE 工具栏的 ![AG](./assets/images/ag.png)按钮。 
+5. 打开 pubspec.yaml 文件中已经自动添加了资源文件的声明。且在lib下生成了一个res.dart文件，文件里就是图片的索引。
+## 使用
+- ImageIcon(
+  AssetImage(Res.nav_back),
+  size: 20,
+  )
+## 参考
 - [AssetRefGenerator](https://github.com/AndrewShen812/AssetsRefGenerator/blob/master/README_zh.md)
-### AssetRefGenerator end>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+## 二、FlutterAssetsGenerator 插件 （没乱码，生成的图片索引命名是小驼峰）
+1. 安装FlutterAssetsGenerator 插件
+2. 根目录下assets/images
+3. 点击images文件夹，鼠标右键 点击Flutter：Configuring Paths，pubspec.yaml里自动生成图片依赖路径
+4. File > Settings > Tools > FlutterAssetsGenerator 可以修改将要生成的图片索引文件名字
+5. 快捷键option/alt + G 生成图片索引文件
+## 使用
+- ImageIcon(
+  AssetImage(R.imagesNavBack),
+  size: 20,
+  )
+## 参考
+- [FlutterAssetsGenerator](https://juejin.cn/post/6898542896274735117)
+### 图片资源自动生成索引插件 end>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
