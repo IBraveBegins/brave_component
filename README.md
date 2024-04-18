@@ -1,7 +1,7 @@
 # 三方组件库用法及example
 
 # 一.序列化
-## json_model 一行命令，将Json文件转为Dart model类。
+## 一、json_model 一行命令，将json文件转为Dart model类及.g.dart。
 
 ### 安装
 ```
@@ -20,19 +20,25 @@ json_serializable: ^6.7.1
    `flutter packages pub run json_model`(Flutter中) 命令生成Dart model类，
    生成的文件默认在"lib/models"目录下
 
-## build_runner 手动写model类，命令行生成.g.dart序列化类
+## 二、build_runner 手动写model类，命令行生成.g.dart序列化类
 
 ### 安装
+```
+dependencies:
+json_annotation: ^4.8.1
 
-    dev_dependencies:
-    build_runner: ^2.4.9
+dev_dependencies:
+build_runner: ^2.4.9
+json_serializable: ^6.7.1
+```
 
 ### 使用
-1. 一次性构建
+1. lib下新建models文件夹，创建model类，根据需要执行下面命令行 
+2. 一次性构建
 `flutter packages pub run build_runner build`
-2. 删除后重新构建
+3. 删除后重新构建
 `flutter packages pub run build_runner build --delete-conflicting-outputs`
-3. 文件监听，自动为后续创建得实体类生成对应得.g.dart文件
+4. 文件监听，自动为后续创建得实体类生成对应得.g.dart文件
 `flutter packages pub run build_runner watch`
 
 ### 参考
