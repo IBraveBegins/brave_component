@@ -1,4 +1,4 @@
-# 三方组件库用法及example
+# 三方组件库用法及实例
 
 # 一.序列化
 ## 一、json_model 一行命令，将json文件转为Dart model类及.g.dart。
