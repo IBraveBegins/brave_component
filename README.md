@@ -67,7 +67,7 @@ generate: true
 1. lib文件夹中新建文件夹l10n/arb，并在其中创建app_en.arb 和app_zh.arb文件
 2. 项目的根目录中添加l10n.yaml
 3. 添加完成之后，执行命令`flutter gen-l10n`，执行命令`flutter run`，.dart_tools会自动生成相关的文件
-4. MaterialApp或GetMaterialApp配置国际化字段
+4. MaterialApp改成GetMaterialApp配置国际化字段
 5. 调用:
    1. 直接使用 Text(AppLocalizations.of(context).helloWorld)
    2. 扩展使用   
