@@ -134,7 +134,7 @@ get: ^4.6.6
 - [Flutter GetX使用---简洁的魅力！](https://juejin.cn/post/6924104248275763208#heading-25)
 ### GetX end>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-# 四、图片资源自动生成索引插件
+# 四、自动生成图片资源索引插件
 ## 一、FlutterAssetRefGenerator 插件（windows上 点击生成图片索引按钮后，pubspec.yaml 会出现中文乱码，需要手动改乱码；mac上没问题。 ）
 1. 安装FlutterAssetRefGenerator插件
 2. 根目录下新建assets/images文件
